@@ -28,13 +28,26 @@ El proyecto se rige bajo la metodología rigurosa de **Box-Jenkins**, estructura
 
 ---
 
-## 🔍 Descripción del Proceso (¿Qué se hizo?)
-Se ejecutó un análisis estadístico y econométrico exhaustivo sobre una serie mensual con **más de 27 años de registros**:
+### 🔍 Descripción del Proceso (¿Qué se hizo?)
 
-* **Análisis Exploratorio (EDA):** Detección de una estacionalidad determinística marcada (picos en invierno vs. valles en verano) y descomposición de tendencias de largo plazo.
-* **Pre-procesamiento:** Limpieza de datos, tratamiento de valores faltantes y test de **Dickey-Fuller Aumentado (ADF)** para evaluar la estacionariedad de la serie.
-* **Modelamiento SARIMA:** Implementación de un modelo $(p,d,q) \times (P,D,Q)_s$ capaz de capturar componentes cíclicos y estocásticos simultáneamente.
+Se ejecutó un análisis estadístico y econométrico exhaustivo sobre una serie de tiempo mensual con **más de 27 años de registros históricos** (1997-2024), estructurado en las siguientes fases técnicas:
 
+#### 1. Análisis Exploratorio de Datos (EDA) y Descomposición
+* **Identificación de Patrones:** Se detectó una estacionalidad anual determinística con picos críticos durante el trimestre invernal (mayo-julio) y valles en verano, consistente con los fenómenos de inversión térmica y escasa ventilación de la cuenca de Santiago.
+* **Análisis de Autocorrelación:** Mediante el uso de correlogramas (**ACF y PACF**), se identificaron dependencias significativas en los primeros rezagos y una persistencia cíclica cada 12 meses, lo que confirmó la necesidad de un enfoque estacional para el modelado.
+
+#### 2. Pre-procesamiento y Rigurosidad Estadística
+* **Tratamiento de Datos:** Limpieza y estructuración de la serie temporal a partir de los registros de la estación **Parque O'Higgins**, asegurando la continuidad mensual y la integridad de la variable objetivo.
+* **Evaluación de Estacionariedad:** Se aplicó el test de **Dickey-Fuller Aumentado (ADF)** para verificar la raíz unitaria. Tras observar que la serie presentaba variaciones cíclicas, se determinó la aplicación de una **diferenciación estacional ($D=1$)** para estabilizar la media y eliminar la componente estacional de la serie.
+
+#### 3. Modelamiento Predictivo SARIMA
+* **Arquitectura del Modelo:** Se implementó y comparó una familia de modelos **SARIMA $(p,d,q) \times (P,D,Q)_{12}$**. Tras evaluar múltiples configuraciones mediante la búsqueda de parsimonia, el modelo **SARIMA(1,0,1)(0,1,1)₁₂** resultó óptimo.
+* **Selección por Criterios de Información:** El modelo final fue seleccionado por minimizar el **AIC (Akaike Information Criterion)**, logrando el mejor equilibrio entre ajuste y complejidad para evitar el sobreajuste (*overfitting*).
+* **Captura de Dinámicas:** Se utilizó un término de media móvil estacional ($Q=1$) para corregir los errores en los ciclos anuales y términos autorregresivos para gestionar la memoria de corto plazo de la contaminación.
+
+#### 4. Diagnóstico y Validación de Precisión
+* **Diagnóstico de Idoneidad:** Se confirmó mediante pruebas de diagnóstico que los residuos se comportan como **ruido blanco** (independientes e idénticamente distribuidos), validando que el modelo capturó toda la información sistemática de la serie.
+* **Benchmarking de Predicción:** El modelo se validó contrastando el pronóstico frente a datos reales preliminares del segundo semestre de 2025, alcanzando un **RMSE (Error Cuadrático Medio Raíz) de 3.7 µg/m³N**. Este resultado es excepcionalmente bajo considerando la variabilidad histórica de la serie, demostrando una alta fiabilidad predictiva.
 
 
 ---
