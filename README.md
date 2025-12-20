@@ -21,7 +21,7 @@ El proyecto se rige bajo la metodología rigurosa de **Box-Jenkins**, estructura
 4.  **Predicción:** Generación de pronósticos con horizontes temporales hasta finales de 2025.
 
 ### Stack Tecnológico
-* **Lenguaje:** Python (Pandas, NumPy)
+* **Lenguaje:** Python (Pandas, NumPy, Matplotlib, statsmodels, pmdarima)
 * **Modelado Estadístico:** `statsmodels` (SARIMA)
 * **Visualización:** Matplotlib & Seaborn
 * **Entorno:** Jupyter Notebooks
