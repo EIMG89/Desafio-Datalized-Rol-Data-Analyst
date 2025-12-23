@@ -84,15 +84,7 @@ Se ha desarrollado un dashboard interactivo en Power BI para explorar las proyec
 A continuación, se presentan capturas del entorno de análisis y el modelo de datos implementado:
 
 | Dashboard de Control y Pronóstico |
-[Dashboard PM10](https://drive.google.com/file/d/1eOTC5vV5xfEEVRjRkkcSxzKavbj_Cp8T/view?usp=drive_link)
-
-A continuación se presenta el panel de control desarrollado para el monitoreo y seguimiento de los niveles de PM10:
-
-<p align="center">
-  <img src="https://lh3.googleusercontent.com/d/1eOTC5vV5xfEEVRjRkkcSxzKavbj_Cp8T" alt="Dashboard PM10 Parque O'Higgins" width="100%">
-</p>
-
-
+[Imagen Dashboard PM10](https://drive.google.com/file/d/1eOTC5vV5xfEEVRjRkkcSxzKavbj_Cp8T/view?usp=drive_link)
 ---
 **Candidato:** Eleazar Israel Madariaga González  
 **Fecha:** 23/12/2025
