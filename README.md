@@ -70,11 +70,21 @@ La contaminación por **PM10** en Santiago es un desafío de salud pública exac
 ---
 
 ## 📂 Estructura del Repositorio
-* `data/`: Datasets históricos y procesados.
-* `notebooks/`: Jupyter Notebook con el flujo completo del análisis.
-* `reports/`: Documentación técnica y PDF del estudio.
-* `dashboard/`: Especificaciones y capturas del tablero en Power BI.
+* `data/`: PM10-Prque Ohigginns-Santiago
+* `notebooks/`: Desafio_Datalized_Analisis
+* `reports/`: Desafio Datalized Informe
+* `dashboard/`: Dashboard PM10
 
+## 📊 Visualización Interactiva
+Se ha desarrollado un dashboard interactivo en Power BI para explorar las proyecciones y el comportamiento histórico del PM10 de manera dinámica.
+
+* **Dashboard en línea:** [Acceder al Dashboard Interactivo](https://drive.google.com/file/d/18WsTVj1oePkYuD6wjjcmp-YYLZVPGqWa/view?usp=sharing)
+
+### Vista Previa del Tablero
+A continuación, se presentan capturas del entorno de análisis y el modelo de datos implementado:
+
+| Dashboard de Control y Pronóstico |
+[Dashboard PM10](https://drive.google.com/file/d/1eOTC5vV5xfEEVRjRkkcSxzKavbj_Cp8T/view?usp=drive_link)
 ---
 **Candidato:** Eleazar Israel Madariaga González  
-**Fecha:** Diciembre 2025
+**Fecha:** 23/12/2025
