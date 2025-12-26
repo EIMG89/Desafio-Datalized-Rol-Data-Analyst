@@ -30,7 +30,7 @@ El proyecto se rige bajo la metodología rigurosa de **Box-Jenkins**, estructura
 
 ### 🔍 Descripción del Proceso (¿Qué se hizo?)
 
-Se ejecutó un análisis estadístico y econométrico exhaustivo sobre una serie de tiempo mensual con **más de 27 años de registros históricos** (1997-2024), estructurado en las siguientes fases técnicas:
+Se ejecutó un análisis estadístico y econométrico exhaustivo sobre una serie de tiempo mensual con **más de 27 años de registros históricos** (1997-2025), estructurado en las siguientes fases técnicas:
 
 #### 1. Análisis Exploratorio de Datos (EDA) y Descomposición
 * **Identificación de Patrones:** Se detectó una estacionalidad anual determinística con picos críticos durante el trimestre invernal (mayo-julio) y valles en verano, consistente con los fenómenos de inversión térmica y escasa ventilación de la cuenca de Santiago.
